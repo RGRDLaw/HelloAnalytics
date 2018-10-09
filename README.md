@@ -2,6 +2,8 @@
 A test to get Google Analytics Reporting API v4 up and running
 http://webapps2/HelloWorld/HelloWorld.php
 
+![successinbrowser](https://user-images.githubusercontent.com/42072985/46701770-b92ce580-cbd5-11e8-872a-d6fcc15b1d62.png)
+
 ## Versioning Notes:
 * 10/09/2018 initial files started
 * Reference:  https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-php
@@ -9,13 +11,16 @@ http://webapps2/HelloWorld/HelloWorld.php
 ## Service Account
  We have a PHP service account with Google Analytics which can be viewed here:
 https://console.developers.google.com/iam-admin/serviceaccounts?project=rgrd-website-analytics
+![googleanalyticsaccount](https://user-images.githubusercontent.com/42072985/46701642-415ebb00-cbd5-11e8-9a1d-2d5d056774be.png)
 
 ## Service Key 
 The service key provided was downloaded and renamed to:  ‘service-account-credentials.json’.  It resides in the same folder as ‘HelloAnalytics.php’.  The file location can be modified later.
 
+
 ## Service Account Linked to Google Analytics Account
 The service account has been linked to our google analytics account here:
 https://analytics.google.com/analytics/web/#/a8459946w16085079p17041261/admin/suiteusermanagement/account
+![serviceaccount](https://user-images.githubusercontent.com/42072985/46701643-41f75180-cbd5-11e8-92f4-8b9c1fd2866f.png)
 
 ## Install Composer
 I installed Composer on the WebApps2 server.  You can find Composer here:  https://getcomposer.org/
