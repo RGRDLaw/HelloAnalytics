@@ -37,13 +37,13 @@ Here is where to see our account View IDs:  https://ga-dev-tools.appspot.com/acc
 
 ## Errors and Issues
 I did encounter a cURL error 60: SSL certificate problem which I assume Jonathan will be able to resolve for us once we are up and running in our new servers.  I solved through a hack of vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php.  I changed this:
-326: $conf[CURLOPT_SSL_VERIFYHOST] = 2;
-327: $conf[CURLOPT_SSL_VERIFYPEER] = true;
+* 326: $conf[CURLOPT_SSL_VERIFYHOST] = 2;
+* 327: $conf[CURLOPT_SSL_VERIFYPEER] = true;
 
 To this:
 
-326: $conf[CURLOPT_SSL_VERIFYHOST] = 0;
-327: $conf[CURLOPT_SSL_VERIFYPEER] = FALSE;
+* 326: $conf[CURLOPT_SSL_VERIFYHOST] = 0;
+* 327: $conf[CURLOPT_SSL_VERIFYPEER] = FALSE;
 
 Reference:  https://stackoverflow.com/questions/35638497/curl-error-60-ssl-certificate-prblm-unable-to-get-local-issuer-certificate
 
